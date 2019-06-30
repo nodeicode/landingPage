@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "personal profile site",
   "main": "index.js",
-  "repository": "https://github.com/nodeicode/landingPage",
+  "repository": "https://github.com/nodeicode/landingPage.git",
   "author": "Me",
   "license": "MIT",
   "dependencies": {
