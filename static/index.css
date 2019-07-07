@@ -1,27 +1,51 @@
+.root{
+  height:100vh;
+}
+body{
+  background-image: linear-gradient(to bottom, #919293, #a0a3a4, #b0b4b3, #c2c5c2, #d6d6d1);
+  background-size: cover;
+}
 .r{
   display:grid;
-  
-
+  grid-auto-columns: 50% auto;
+  grid-auto-rows: 20% auto 25%;
 }
 .a{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 3vmin;
     line-height: 1.65;
+    width: 45%;
+    justify-self: center;
+    justify-items: center;
+    grid-column: 1;
+    grid-row: 2/3;
+    padding-top: 5%;
     text-align: center;
-    background-color: #000000;
   }
 .b{
-  font-family: 'Oswald', sans-serif;
-    background-color: #000000;
-    text-align: center;
+  grid-column: 2;
+  letter-spacing: 0.5vmin;
+  grid-row: 2/3;
+  height: 50%;
+  width: 75%;
 }
-  body{
-    background-image: url("./white-wood.jpg");
+  h1{
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Righteous', cursive;
+  background: linear-gradient(to right, #9076bb, #7791d2, #64a9db, #67bedb, #81d0d7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
-  h1 {
-    color: #000000;
-    font-size: 50px;
-    display: inline-block;  
+  span{
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background: none;
+  }
+  h2{
+    color:gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   img{
     border-radius: 50%;
