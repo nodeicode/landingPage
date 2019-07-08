@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <title>About Me!</title>
           <meta name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=yes"/>
           <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico"/>
           <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"/>
           {this.props.styleTags}

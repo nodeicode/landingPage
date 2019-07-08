@@ -10,7 +10,7 @@ body{
 .a{
     letter-spacing: 3vmin;
     line-height: 1.65;
-    width: 20vw;
+    width: 32vmin;
     justify-self: center;
     justify-items: center;
     grid-column: 1;
@@ -27,7 +27,7 @@ body{
   text-align: center;
 }
   h1{
-  font-size: 7vmin;
+  font-size: 6vmin;
   font-weight: 700;
   font-family: 'Righteous', cursive;
   background: linear-gradient(to bottom, #424242, #757777, #b0b4b3, #c2c5c2, #d6d6d1);
@@ -48,7 +48,7 @@ body{
   }
   img{
     border-radius: 5vmax;
-    height:24vh;
-    width:12vw;
+    height:14vmax;
+    width:12vmax;
     display: inline-block;
   }
