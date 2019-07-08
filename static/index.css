@@ -1,38 +1,36 @@
-.root{
-  height:100vh;
-}
+
 body{
-  background-image: linear-gradient(to bottom, #919293, #a0a3a4, #b0b4b3, #c2c5c2, #d6d6d1);
-  background-size: cover;
+  background-image: url('./isometropolis.jpg');
 }
 .r{
   display:grid;
-  grid-auto-columns: 50% auto;
-  grid-auto-rows: 20% auto 25%;
+  grid-auto-columns: 50vw auto;
+  grid-auto-rows: 20vh auto 25vh;
 }
 .a{
     letter-spacing: 3vmin;
     line-height: 1.65;
-    width: 45%;
+    width: 20vw;
     justify-self: center;
     justify-items: center;
     grid-column: 1;
     grid-row: 2/3;
-    padding-top: 5%;
+    padding-top: 3vh;
     text-align: center;
   }
 .b{
   grid-column: 2;
   letter-spacing: 0.5vmin;
   grid-row: 2/3;
-  height: 50%;
-  width: 75%;
+  height: 30vh;
+  width: 32vw;
+  text-align: center;
 }
   h1{
-  font-size: 55px;
+  font-size: 7vmin;
   font-weight: 700;
   font-family: 'Righteous', cursive;
-  background: linear-gradient(to right, #9076bb, #7791d2, #64a9db, #67bedb, #81d0d7);
+  background: linear-gradient(to bottom, #424242, #757777, #b0b4b3, #c2c5c2, #d6d6d1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,12 +42,13 @@ body{
   background: none;
   }
   h2{
+    font-size: 2.5vmin;
     color:gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   img{
-    border-radius: 50%;
-    height:200px;
-    width:200px;
+    border-radius: 5vmax;
+    height:24vh;
+    width:12vw;
     display: inline-block;
   }
