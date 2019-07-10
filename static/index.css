@@ -1,54 +1,13 @@
 
 body{
-  background-image: url('./isometropolis.jpg');
-}
-.r{
-  display:grid;
-  grid-auto-columns: 50vw auto;
-  grid-auto-rows: 20vh auto 25vh;
-}
-.a{
-    letter-spacing: 3vmin;
-    line-height: 1.65;
-    width: 32vmin;
-    justify-self: center;
-    justify-items: center;
-    grid-column: 1;
-    grid-row: 2/3;
-    padding-top: 3vh;
-    text-align: center;
-  }
-.b{
-  grid-column: 2;
-  letter-spacing: 0.5vmin;
-  grid-row: 2/3;
-  height: 30vh;
-  width: 32vw;
-  text-align: center;
-}
-  h1{
-  font-size: 6vmin;
-  font-weight: 700;
-  font-family: 'Righteous', cursive;
-  background: linear-gradient(to bottom, #424242, #757777, #b0b4b3, #c2c5c2, #d6d6d1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
-  span{
-  -webkit-text-fill-color: white;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background: none;
-  }
-  h2{
-    font-size: 2.5vmin;
-    color:gray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
-  img{
-    border-radius: 5vmax;
-    height:14vmax;
-    width:12vmax;
-    display: inline-block;
-  }
+  background-image: url('./shattered-island.gif');
+  height: 94.7vh;}
+
+.root{text-align: center;}
+
+.Typist{
+color: beige;
+cursor: pointer;
+padding-top:40vh;
+font-size: 8vmax;}
+

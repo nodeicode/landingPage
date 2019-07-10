@@ -1,5 +1,5 @@
 Arguments: 
-  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /usr/bin/yarn add -D babel-plugin-styled-components
+  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /usr/bin/yarn add react-typist --save
 
 PATH: 
   /home/lohit/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
@@ -31,8 +31,12 @@ npm manifest:
       "next": "^8.1.0",
       "next-images": "^1.1.2",
       "react": "^16.8.6",
+      "react-animations": "^1.0.0",
       "react-dom": "^16.8.6",
       "styled-components": "^4.3.2"
+    },
+    "devDependencies": {
+      "babel-plugin-styled-components": "^1.10.6"
     }
   }
 
@@ -1223,7 +1227,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/babel-plugin-react-require/-/babel-plugin-react-require-3.0.0.tgz#2e4e7b4496b93a654a1c80042276de4e4eeb20e3"
     integrity sha1-Lk57RJa5OmVKHIAEInbeTk7rIOM=
   
-  "babel-plugin-styled-components@>= 1":
+  "babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.6:
     version "1.10.6"
     resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.6.tgz#f8782953751115faf09a9f92431436912c34006b"
     integrity sha512-gyQj/Zf1kQti66100PhrCRjI5ldjaze9O0M3emXRPAN80Zsf8+e1thpTpaXJXVHXtaM4/+dJEgZHyS9Its+8SA==
@@ -3923,6 +3927,11 @@ Lockfile:
       ini "~1.3.0"
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
+  
+  react-animations@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/react-animations/-/react-animations-1.0.0.tgz#d96222920dfeabec8984d9b2ef2c5a5aadb40f06"
+    integrity sha512-ePPpVgdKnNEXm+LP1ww5s3n0JzebBw9QdRfxRqogzeg1PDIn6kf0pmvgeTeVZQXXpGmHImkIeTiaQR1O6xjntA==
   
   react-dom@^16.8.6:
     version "16.8.6"
