@@ -19,12 +19,12 @@
     line-height: 1.65;
     letter-spacing: 0.5vmin;
     grid-row: 2/3;
-    height: 27vh;
+    height: 28vh;
     width: 30vw;
     text-align: center;
   }
     .hi{
-    font-size: 3.5vmax;
+    font-size: 3vmax;
     font-weight: 700;
     font-family: 'Righteous', cursive;
     background: linear-gradient(to bottom, #424242, #757777, #b0b4b3, #c2c5c2, #d6d6d1);
@@ -39,8 +39,9 @@
     background: none;
     }
     h2{
-      font-size: 1.9vmax;
-      font-weight: 500;
+      font-size: 1.3vmax;
+      bottom: 1vmin;
+      font-weight: 900;
       color:gray;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }

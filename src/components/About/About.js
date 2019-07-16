@@ -18,12 +18,11 @@ export default class About extends React.Component{
         return(
             <div className="r">
             <Card className="a">
-            <img src="../static/profile.jpeg"/>
+            <img src="../static/profile.jpg"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
             <Card className="b">
             <h1 className="hi">What did I Do?</h1>
-            <h2>That's what this page is all about <span>😁</span></h2>
           </Card>
           </div>
         );

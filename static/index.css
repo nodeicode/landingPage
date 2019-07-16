@@ -1,7 +1,9 @@
 
 body{
   background-image: url('./shattered-island.gif');
-  height: 94.7vh;}
+  height: 94.5vh;
+  overflow: hidden;
+}
 
 .root{text-align: center;}
 

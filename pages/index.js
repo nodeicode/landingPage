@@ -9,17 +9,17 @@ export default class HomePage extends React.Component {
   renderAbout=()=>{
     setTimeout(()=>{
       this.setState({render:true,class:"dis"});
-    },2000);
+    },1000);
   }
 
   render(){
   const dis = {display:'none'}
-  return(<About/>)
-    /*return (
+  //return(<About/>)
+    return (
     <div className="root">
       <Typist
         avgTypingDelay={100}
-        startDelay={2000}
+        startDelay={1000}
         cursor={{blink:true}}
         onTypingDone={this.renderAbout}>
         <a>HELLO!</a>
@@ -29,5 +29,5 @@ export default class HomePage extends React.Component {
       <style jsx global>{`.Typist{display:none}`}</style>
       </div>):null}
     </div>
-  )*/
+  )
 }}
