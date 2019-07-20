@@ -13,6 +13,9 @@ background-color:white;
 border-type:block;
 border-color:white;
 `;
+const Find = styled.Button`
+
+`;
 export default class About extends React.Component{
   render(){
         return(

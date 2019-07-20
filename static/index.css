@@ -12,4 +12,6 @@ color: beige;
 cursor: pointer;
 padding-top:40vh;
 font-size: 8vmax;}
-
+a{
+font-family: 'Righteous', cursive; 
+}

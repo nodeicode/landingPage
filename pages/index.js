@@ -9,7 +9,7 @@ export default class HomePage extends React.Component {
   renderAbout=()=>{
     setTimeout(()=>{
       this.setState({render:true,class:"dis"});
-    },1000);
+    },300);
   }
 
   render(){
@@ -19,11 +19,12 @@ export default class HomePage extends React.Component {
     <div className="root">
       <Typist
         avgTypingDelay={100}
-        startDelay={1000}
+        startDelay={800}
         cursor={{blink:true}}
         onTypingDone={this.renderAbout}>
         <a>HELLO!</a>
-      <Typist.Backspace count={6} delay={100}/>
+      <Typist.Delay ms={500}/>
+      <Typist.Backspace count={6} delay={50}/>
         </Typist>
       {this.state.render?(<div><About/>
       <style jsx global>{`.Typist{display:none}`}</style>
