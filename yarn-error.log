@@ -1,5 +1,5 @@
 Arguments: 
-  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /usr/bin/yarn add react-typist --save
+  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /usr/bin/yarn upgrade
 
 PATH: 
   /home/lohit/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/lohit/Documents/landing-page/node_modules/.bin/acorn'
+  Error: EACCES: permission denied, mkdir '/home/lohit/Documents/landing-page/node_modules/url-loader/node_modules/schema-utils'
 
 npm manifest: 
   {
@@ -33,10 +33,15 @@ npm manifest:
       "react": "^16.8.6",
       "react-animations": "^1.0.0",
       "react-dom": "^16.8.6",
+      "react-typist": "^2.0.5",
       "styled-components": "^4.3.2"
     },
     "devDependencies": {
       "babel-plugin-styled-components": "^1.10.6"
+    },
+    "engines": {
+      "npm":">=6.0.0",
+      "node":">=9.3.0"
     }
   }
 
@@ -3822,7 +3827,7 @@ Lockfile:
       loose-envify "^1.3.1"
       object-assign "^4.1.1"
   
-  prop-types@^15.5.4, prop-types@^15.6.2:
+  prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -3959,6 +3964,13 @@ Lockfile:
     integrity sha512-m8NKaYzWxifPGvrf9WGo/6WtOG6MNBIs2uNdcdIuQswtlkaV19AiFegwTeyblwoH2XxMcRviFJBvr4OkoTt3nA==
     dependencies:
       object-is "^1.0.1"
+  
+  react-typist@^2.0.5:
+    version "2.0.5"
+    resolved "https://registry.yarnpkg.com/react-typist/-/react-typist-2.0.5.tgz#9830395a73a03e6368e1392ecb98edaa3a648e44"
+    integrity sha512-iZCkeqeegO0TlkTMiH2JD1tvMtY9RrXkRylnAI6m8aCVAUUwNzoWTVF7CKLij6THeOMcUDCznLDDvNp55s+YZA==
+    dependencies:
+      prop-types "^15.5.10"
   
   react@^16.8.6:
     version "16.8.6"

@@ -13,9 +13,6 @@ background-color:white;
 border-type:block;
 border-color:white;
 `;
-const Find = styled.Button`
-
-`;
 export default class About extends React.Component{
   render(){
         return(
@@ -26,6 +23,7 @@ export default class About extends React.Component{
             </Card>
             <Card className="b">
             <h1 className="hi">What did I Do?</h1>
+            /*Gotta ADDD a Button with a GitHUb repos info componenet! */
           </Card>
           </div>
         );

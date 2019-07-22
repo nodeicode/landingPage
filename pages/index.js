@@ -5,6 +5,27 @@ import Typist from 'react-typist'
 export default class HomePage extends React.Component {
 
   state = {render:false,class:""}
+
+  componentDidMount(){
+    /*fetch('https://api.github.com',{
+      method:'GET',
+      headers:{
+      'Authorization':'token e07e5c4efb23ec5a85d8bf094b16b20ac7e49fa1'}
+    }).then(res=>res.json())
+    .then(response=>console.log(JSON.stringify(response)))
+    .catch(err=>console.error(err));*/
+    fetch('https://api.github.com/users/nodeicode/repos',{
+      method:'GET',
+      headers:{
+      'Authorization':'token e07e5c4efb23ec5a85d8bf094b16b20ac7e49fa1'}
+    }).then(res=>res.json())
+      .then(response=>{
+        response.forEach(element => {
+          console.log(JSON.stringify(element["name"]));
+        });
+      })
+      .catch(err=>console.log(err));
+  }
   
   renderAbout=()=>{
     setTimeout(()=>{
