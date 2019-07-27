@@ -4,7 +4,7 @@
     grid-auto-rows: 20vh auto 25vh;
   }
   .a{
-      letter-spacing: 3vmin;
+      letter-spacing: 2.5vmin;
       line-height: 1.65;
       width: 32vmin;
       justify-self: center;
@@ -12,7 +12,6 @@
       grid-column: 1;
       grid-row: 2/3;
       padding-top: 3vh;
-      text-align: center;
     }
   .b{
     grid-column: 2;
@@ -26,11 +25,9 @@
     .hi{
     font-size: 3vmax;
     font-weight: 700;
+    padding-left: 10px;
     font-family: 'Righteous', cursive;
-    background: linear-gradient(to bottom, #424242, #757777, #b0b4b3, #c2c5c2, #d6d6d1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: beige;
     }
     span{
     -webkit-text-fill-color: white;
