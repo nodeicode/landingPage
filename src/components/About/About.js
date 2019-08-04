@@ -18,13 +18,10 @@ export default class About extends React.Component{
   render(){
         return(
             <div className="r">
-            <Card className="a a">
+            <Card className="a">
             <img src="../static/profile.jpg"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
-            <Card className="b">
-            <h1 className="hi">What did I Do?</h1>
-          </Card>
           </div>
         );
     }}

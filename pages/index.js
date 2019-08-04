@@ -8,7 +8,7 @@ export default class HomePage extends React.Component {
   state = {render:false,class:""}
 
   componentDidMount(){
-    fetch('https://api.github.com/users/nodeicode/repos',{
+   /* fetch('https://api.github.com/users/nodeicode/repos',{
       method:'GET',
       headers:{
       'Authorization':'token fbdd3205a5fa28578d120f3ee578a7ac2d6df4d2'}
@@ -18,7 +18,7 @@ export default class HomePage extends React.Component {
           console.log(JSON.stringify(element["name"]));
         });
       })
-      .catch(err=>console.log(err));
+      .catch(err=>console.log(err));*/
   }
   
   renderAbout=()=>{
@@ -29,7 +29,6 @@ export default class HomePage extends React.Component {
 
   render(){
   const dis = {display:'none'}
-  const fadeo = keyframes`${FadeOutLeft}`;
   //return(<About/>)
     return (
     <div className="root">
