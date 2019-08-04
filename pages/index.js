@@ -37,7 +37,7 @@ export default class HomePage extends React.Component {
         startDelay={800}
         cursor={{blink:true}}
         onTypingDone={this.renderAbout}>
-        <a>HELLO!</a>
+        <a>Hello!</a>
       <Typist.Delay ms={500}/>
       <Typist.Backspace count={6} delay={50}/>
         </Typist>

@@ -1,11 +1,11 @@
 .r{
     display:grid;
     grid-auto-columns: 100vw auto;
-    grid-auto-rows: 20vh auto 25vh;
+    grid-auto-rows: 12vh auto 28vh;
     text-align: center;
   }
   .a{
-      letter-spacing: 2.5vmin;
+      letter-spacing: 2vmin;
       line-height: 1.65;
       width: 32vmin;
       display: block;
@@ -37,8 +37,8 @@
     }
     img{
       border-radius: 5vmax;
-      height:9vmax;
-      width:9vmax;
+      height:12vmax;
+      width:12vmax;
       display: inline-block;
     }
   
