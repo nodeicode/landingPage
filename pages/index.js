@@ -34,7 +34,7 @@ export default class HomePage extends React.Component {
     <div className="root">
       <Typist
         avgTypingDelay={100}
-        startDelay={800}
+        startDelay={1000}
         cursor={{blink:true}}
         onTypingDone={this.renderAbout}>
         <a>Hello!</a>

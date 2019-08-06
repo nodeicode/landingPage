@@ -1,17 +1,25 @@
 .r{
     display:grid;
-    grid-auto-columns: 100vw auto;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 12vh auto 28vh;
-    text-align: center;
   }
+
+.L{
+  grid-column:2/3;
+  grid-row:1/3;
+  justify-self: left;
+  display: block;
+  width:2vw;
+  height:2vh;
+}
   .a{
       letter-spacing: 2vmin;
       line-height: 1.65;
       width: 32vmin;
       display: block;
-      justify-self: center;
       justify-items: center;
-      grid-column: 1;
+      justify-self: center;
+      grid-column: 1/3;
       grid-row: 2/3;
       padding-top: 3vh;
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import styled,{keyframes} from 'styled-components'
 import {fadeInRight} from 'react-animations'
+import {FaLinkedin,IconContext,FaTwitterSquare,FaGithub,FaDev} from 'react-icons'
 
 const fadein  = keyframes`${fadeInRight}`;
 
@@ -22,6 +23,10 @@ export default class About extends React.Component{
             <img src="../static/profile.jpg"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
+            <FaLinkedin className="L"/>
+            <FaTwitterSquare/>
+            <FaGithub/>
+            <FaDev/>
           </div>
         );
     }}
