@@ -1,5 +1,5 @@
 Arguments: 
-  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /home/lohit/.yarn/bin/yarn.js add react-icons --save
+  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /home/lohit/.yarn/bin/yarn.js add --dev @fortawesome/fontawesome-free
 
 PATH: 
   /home/lohit/.yarn/bin:/home/lohit/.config/yarn/global/node_modules/.bin:/home/lohit/.yarn/bin:/home/lohit/.config/yarn/global/node_modules/.bin:/home/lohit/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
@@ -1498,6 +1498,11 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
     integrity sha1-BuuE8A7qQT2oav/vrL/7Ngk7PFA=
+  
+  camelcase@^5.0.0:
+    version "5.3.1"
+    resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
+    integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
   
   camelize@^1.0.0:
     version "1.0.0"
@@ -3958,6 +3963,13 @@ Lockfile:
     version "5.1.4"
     resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.4.tgz#88dfb88857c18ceb3b9f95076f850d7121776991"
     integrity sha512-fp+U98OMZcnduQ+NSEiQa4s/XMsbp+5KlydmkbESOw4P69iWZ68ZMFM5a2BuE0FgqPBKApJyRuYHR95jM8lAmg==
+  
+  react-icons@^3.7.0:
+    version "3.7.0"
+    resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.7.0.tgz#64fe46231fabfeea27895edeae6c3b78114b8c8f"
+    integrity sha512-7MyPwjIhuyW0D2N3s4DEd0hGPGFf0sK+IIRKhc1FvSpZNVmnUoGvHbmAwzGJU+3my+fvihVWgwU5SDtlAri56Q==
+    dependencies:
+      camelcase "^5.0.0"
   
   react-is@16.8.6, react-is@^16.6.0, react-is@^16.8.1:
     version "16.8.6"
