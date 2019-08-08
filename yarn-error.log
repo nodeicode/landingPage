@@ -1,11 +1,11 @@
 Arguments: 
-  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /home/lohit/.yarn/bin/yarn.js add --dev @fortawesome/fontawesome-free
+  /home/lohit/.nvm/versions/node/v10.16.0/bin/node /home/lohit/.cache/co.zeit.now/dev/builders/yarn --prefer-offline --ignore-engines --cwd /home/lohit/Documents/landing-page
 
 PATH: 
-  /home/lohit/.yarn/bin:/home/lohit/.config/yarn/global/node_modules/.bin:/home/lohit/.yarn/bin:/home/lohit/.config/yarn/global/node_modules/.bin:/home/lohit/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+  /home/lohit/.cache/co.zeit.now/dev/builders:/home/lohit/.nvm/versions/node/v10.16.0/bin:/home/lohit/.yarn/bin:/home/lohit/.config/yarn/global/node_modules/.bin:/home/lohit/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
 
 Yarn version: 
-  1.17.3
+  1.15.2
 
 Node version: 
   10.16.0
@@ -37,6 +37,7 @@ npm manifest:
       "styled-components": "^4.3.2"
     },
     "devDependencies": {
+      "@fortawesome/fontawesome-free": "^5.10.1",
       "babel-plugin-styled-components": "^1.10.6"
     },
     "engines": {
@@ -780,6 +781,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.4.tgz#a87b4b04e5ae14a88d48ebef15015f6b7d1f5677"
     integrity sha512-kBa+cDHOR9jpRJ+kcGMsysrls0leukrm68DmFQoMIWQcXdr2cZvyvypWuGYT7U+9kAExUE7+T7r6G3C3A6L8MQ==
   
+  "@fortawesome/fontawesome-free@^5.10.1":
+    version "5.10.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.1.tgz#dec28ee02c3fc51da46d53ce4da9d5787312fbd7"
+    integrity sha512-PYncBhgN1l02mwHmczukexmu4yRTjRDAAdcK62jdWSAW8epcnZ9K2win/7rMrffiv/c7XLVDA8vD+yi6WyvbGQ==
+  
   "@webassemblyjs/ast@1.7.11":
     version "1.7.11"
     resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -1498,11 +1504,6 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
     integrity sha1-BuuE8A7qQT2oav/vrL/7Ngk7PFA=
-  
-  camelcase@^5.0.0:
-    version "5.3.1"
-    resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
-    integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
   
   camelize@^1.0.0:
     version "1.0.0"
@@ -3963,13 +3964,6 @@ Lockfile:
     version "5.1.4"
     resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.4.tgz#88dfb88857c18ceb3b9f95076f850d7121776991"
     integrity sha512-fp+U98OMZcnduQ+NSEiQa4s/XMsbp+5KlydmkbESOw4P69iWZ68ZMFM5a2BuE0FgqPBKApJyRuYHR95jM8lAmg==
-  
-  react-icons@^3.7.0:
-    version "3.7.0"
-    resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.7.0.tgz#64fe46231fabfeea27895edeae6c3b78114b8c8f"
-    integrity sha512-7MyPwjIhuyW0D2N3s4DEd0hGPGFf0sK+IIRKhc1FvSpZNVmnUoGvHbmAwzGJU+3my+fvihVWgwU5SDtlAri56Q==
-    dependencies:
-      camelcase "^5.0.0"
   
   react-is@16.8.6, react-is@^16.6.0, react-is@^16.8.1:
     version "16.8.6"

@@ -38,7 +38,7 @@ export default class About extends React.Component{
         return(
             <div className="r">
             <Card className="a">
-            <img src="../static/profile.jpg"/>
+            <img src="../static/profilec.jpeg"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
             <Icon className="L I"><Linkw href="https://www.linkedin.com/in/lohit-aryan/"><i className="fab fa-linkedin"/></Linkw></Icon>

@@ -21,6 +21,11 @@
     "@fortawesome/fontawesome-free": "^5.10.1",
     "babel-plugin-styled-components": "^1.10.6"
   },
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next"
+  },
   "engines": {
     "npm": ">=6.0.0",
     "node": ">=9.3.0"
