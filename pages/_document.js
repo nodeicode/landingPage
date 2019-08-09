@@ -14,10 +14,11 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" type="text/css"/>
+          <title>Lohit Aryan 👨‍💻</title>
           <meta charSet="utf-8" />
           <meta name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=yes"/>
+          <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" type="text/css"/>
           <link rel="prefetch" href="../static/profile.jpg"/>
           <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico"/>
           {this.props.styleTags}
