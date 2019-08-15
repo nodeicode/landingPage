@@ -35,15 +35,16 @@ export default class HomePage extends React.Component {
       <Typist
         avgTypingDelay={100}
         startDelay={500}
+        className="T1"
         cursor={{blink:true}}
         onTypingDone={this.renderAbout}>
-        <a>Hello!</a>
+        <a className="a1">Hello!</a>
       <Typist.Delay ms={500}/>
       <Typist.Backspace count={6} delay={50}/>
         </Typist>
       {this.state.render?(<div>  
       <About/>
-      <style jsx global>{`.Typist{display:none}`}</style>
+      <style jsx global>{`.T1{display:none}`}</style>
       </div>):null}
     </div>
   )

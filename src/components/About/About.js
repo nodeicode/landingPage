@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import Typist from 'react-typist'
 import styled,{keyframes} from 'styled-components'
 import {fadeInRight} from 'react-animations'
 import '@fortawesome/fontawesome-free/js/all'
@@ -10,7 +11,7 @@ const Card = styled.div`
 box-shadow: 0 3px 15px 0 rgb(100,100,100,100.5);
 border-radius:10%;
 text-align:center;
-animation: 2s ${fadein};
+animation: 1.5s ${fadein};
 border-type:solid;
 border-color:white;
 border-width:10px;
@@ -41,6 +42,27 @@ export default class About extends React.Component{
             <img src="../static/profilec.jpeg" alt="Profle Pic"/>
             <h1 className="hi">Lohit Aryan</h1>
             <a className="tag">@nodeicode</a>
+            </Card>
+            <Typist
+                avgTypingDelay={100}
+                startDelay={2000}
+                cursor={{hideWhenDone: true}}
+                className="T2">
+                <a>I am a Blogger</a>
+                <Typist.Delay ms={1500}/>
+                <Typist.Backspace count={7} delay={200}/>
+                <a>Gamer</a>
+                <Typist.Delay ms={1500}/>
+                <Typist.Backspace count={5} delay={200}/>
+                <a>CS Student</a>
+                <Typist.Delay ms={1000}/>
+                <Typist.Backspace count={10} delay={200}/>
+                <a>Web Developer 😎</a> 
+              </Typist>
+            <Card className="b">
+              <a>I'm a Open-Source Developer and a Collage Student currently in my junior year at The University Of Illinois
+                at Chicago. I love Javascript and am heavily focused on ReactJS and NodeJS. Contact me on any of my handles 😊 
+              </a>
             </Card>
             <Icon className="L I"><Linkw href="https://www.linkedin.com/in/lohit-aryan/"><i className="fab fa-linkedin"/></Linkw></Icon>
             <Icon className="T I"><Linkw href="https://twitter.com/stackicode/"><i className="fab fa-twitter-square"/></Linkw></Icon>

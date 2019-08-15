@@ -7,11 +7,11 @@ body{
 
 .root{text-align: center;}
 
-.Typist{
+.T1{
 color: beige;
 cursor: pointer;
 padding-top:40vh;
 font-size: 8vmax;}
-a{
+.a1{
 font-family: 'Righteous', cursive; 
 }
