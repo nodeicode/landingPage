@@ -10,7 +10,6 @@ const fadein  = keyframes`${fadeInRight}`;
 const Card = styled.div`
 box-shadow: 0 3px 15px 0 rgb(100,100,100,100.5);
 border-radius:10%;
-text-align:center;
 animation: 1.5s ${fadein};
 border-type:solid;
 border-color:white;
@@ -60,8 +59,7 @@ export default class About extends React.Component{
                 <a>Web Developer 😎</a> 
               </Typist>
             <Card className="b">
-              <a>I'm a Open-Source Developer and a Collage Student currently in my junior year at The University Of Illinois
-                at Chicago. I love Javascript and am heavily focused on ReactJS and NodeJS. Contact me on any of my handles 😊 
+              <a className="ab"> ❤️ Javascript, heavily focused on React, Node and Next. Interested in knowing more about me 🤔? Contact me on any of my handles 😊 
               </a>
             </Card>
             <Icon className="L I"><Linkw href="https://www.linkedin.com/in/lohit-aryan/"><i className="fab fa-linkedin"/></Linkw></Icon>
