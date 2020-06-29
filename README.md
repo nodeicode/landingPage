@@ -8,9 +8,9 @@
   </a>
 </p>
 
-> Profile Page with all my skill, projects and more Information!
+> Profile Page with all my skills, projects and more Information!
 
-### 🏠 [Homepage](localhost:3000)
+### 🏠 [Homepage](lohitaryan.now.sh)
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ now dev
 
 👤 **Lohit Aryan**
 
-* Twitter: [@stackicode](https://twitter.com/stackicode)
+* Twitter: [@stackicode](https://twitter.com/nodeicode)
 * Github: [@nodeicode](https://github.com/nodeicode)
 
 ## Show your support
@@ -41,4 +41,4 @@ now dev
 Give a ⭐️ if this project helped you!
 
 ***
-_Made with ❤️ _
+_Made with ❤️ Lohit Aryan_

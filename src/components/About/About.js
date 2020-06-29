@@ -2,23 +2,22 @@ import React from 'react'
 import './About.css'
 import Typist from 'react-typist'
 import styled,{keyframes} from 'styled-components'
-import {fadeInRight} from 'react-animations'
+import {fadeIn,fadeInRight} from 'react-animations'
 import '@fortawesome/fontawesome-free/js/all'
 
-const fadein  = keyframes`${fadeInRight}`;
+const fadein  = keyframes`${fadeIn}`;
+const fadeinr = keyframes`${fadeInRight}`;
+
 
 const Card = styled.div`
-box-shadow: 0 3px 15px 0 rgb(100,100,100,100.5);
-border-radius:10%;
+background-color:white;
+border-radius:25px;
 animation: 1.5s ${fadein};
-border-type:solid;
-border-color:white;
-border-width:10px;
 `;
 const Icon = styled.span`
 font-size:8vmin;
-color:beige;
-animation: 2s ${fadein};
+color:#f08d07;
+animation: 2s ${fadeinr};
 `;
 const Linkw = styled.a`
 text-decoration:none;
@@ -31,7 +30,7 @@ export default class About extends React.Component{
   componentDidMount(){
     setTimeout(()=>{
       this.setState({show:true});
-    },2000);
+    },1000);
   }
 
   render(){
@@ -40,14 +39,21 @@ export default class About extends React.Component{
             <Card className="a">
             <img src="../static/profilec.jpeg" alt="Profle Pic"/>
             <h1 className="hi">Lohit Aryan</h1>
-            <a className="tag">@nodeicode</a>
             </Card>
+
+            <div class="nav">
+              <a class="aa">About</a>
+              <a class="p">Projects</a>
+              <a class="e">Experience</a>
+            </div>
+
+            <div class="about">
             <Typist
                 avgTypingDelay={100}
                 startDelay={2000}
                 cursor={{hideWhenDone: true}}
                 className="T2">
-                <a>I am a Blogger</a>
+                {/*<a>I am a Blogger</a>
                 <Typist.Delay ms={1500}/>
                 <Typist.Backspace count={7} delay={200}/>
                 <a>Gamer</a>
@@ -55,17 +61,20 @@ export default class About extends React.Component{
                 <Typist.Backspace count={5} delay={200}/>
                 <a>CS Student</a>
                 <Typist.Delay ms={1000}/>
-                <Typist.Backspace count={10} delay={200}/>
-                <a>Web Developer 😎</a> 
+                <Typist.Backspace count={10} delay={200}/>*/}
+                <a>About Me</a> 
               </Typist>
-            <Card className="b">
-              <a className="ab"> ❤️ Javascript, heavily focused on React, Node and Next. Interested in knowing more about me 🤔? Contact me on any of my handles 😊 
+            
+              <a className="b">I ❤️ Javascript, heavily focused on React, Node and Next. I'm a Undergrad majoring in Computer Science at the University of Illinois at Chicago, graduating December 2020.  
               </a>
-            </Card>
+            </div>
+            
+            <div class="ports">
             <Icon className="L I"><Linkw href="https://www.linkedin.com/in/lohit-aryan/"><i className="fab fa-linkedin"/></Linkw></Icon>
-            <Icon className="T I"><Linkw href="https://twitter.com/stackicode/"><i className="fab fa-twitter-square"/></Linkw></Icon>
+            <Icon className="T I"><Linkw href="https://twitter.com/nodeicode"><i className="fab fa-twitter-square"/></Linkw></Icon>
             <Icon className="D I"><Linkw href="https://dev.to/nodeicode"><i className="fab fa-dev"/></Linkw></Icon>
             <Icon className="G I"><Linkw href="https://github.com/nodeicode"><i className="fab fa-github"/></Linkw></Icon>
+            </div>
             {this.state.show?(<style global jsx>{`.I{display:block}`}</style>):null}
           </div>
         );

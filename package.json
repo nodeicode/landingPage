@@ -13,13 +13,14 @@
     "next-images": "^1.1.2",
     "react": "^16.8.6",
     "react-animations": "^1.0.0",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.13.1",
     "react-typist": "^2.0.5",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.4.1",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.1",
-    "babel-plugin-styled-components": "^1.10.6"
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "babel-plugin-styled-components": "^1.10.7"
   },
   "scripts": {
     "build": "next build",

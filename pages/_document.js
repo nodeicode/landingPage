@@ -14,8 +14,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" as="style"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css"/>
+          <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" type="text/css" as="style"/>
           <meta charSet="utf-8" />
           <meta name="description" content="Check out about Lohit Aryan's and Social Handles!!"></meta>
           <meta name="viewport"
