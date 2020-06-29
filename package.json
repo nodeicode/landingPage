@@ -9,6 +9,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "global": "^4.4.0",
+<<<<<<< Updated upstream
     "next": "^9.3.2",
     "next-images": "^1.1.2",
     "react": "^16.8.6",
@@ -20,6 +21,18 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
+=======
+    "next": "^8.1.0",
+    "next-images": "^1.4.0",
+    "react": "^16.13.1",
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-typist": "^2.0.5",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+>>>>>>> Stashed changes
     "babel-plugin-styled-components": "^1.10.7"
   },
   "scripts": {
