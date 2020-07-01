@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './About.module.css'
 import Typist from 'react-typist'
 import styled,{keyframes} from 'styled-components'
 import {fadeIn,fadeInRight} from 'react-animations'
