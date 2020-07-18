@@ -52,6 +52,7 @@ export default class HomePage extends React.Component {
             `}</style>
           </div>
         ) : null}
+        <a className="cpyright">Copyright © Lohit Aryan Gopikonda</a>
       </div>
     );
   }

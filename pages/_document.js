@@ -14,15 +14,15 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" as="style"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css"/>
+          <title>Lohit Aryan</title>
+          <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.png" />
+          <link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" as="style" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" />
           <meta charSet="utf-8" />
           <meta name="description" content="Check out about Lohit Aryan's and Social Handles!!"></meta>
           <meta name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=yes"/>
-          <link rel="prefetch" href="../static/profilec.jpeg" as="image" type="image/jpeg"/>
-          <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico"/>
-          {this.props.styleTags}
+            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=yes" />
+          <link rel="prefetch" href="/static/profilec.jpeg" as="image" type="image/jpeg" />
         </Head>
         <body>
           <Main />
