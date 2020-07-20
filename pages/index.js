@@ -2,9 +2,16 @@ import './index.css'
 import React from "react";
 import About from "../src/components/About/About.js";
 import Typist from "react-typist";
-import { FadeOutLeft } from "react-animations";
+import styled, { keyframes } from 'styled-components'
+import {fadeIn,fadeOut} from 'react-animations/lib/fade-in';
+
+const fadeou = keyframes`${fadeOut}`;
+const fadei = keyframes`${fadeIn}`;
+
+
+
 export default class HomePage extends React.Component {
-  state = { render: false, class: "" };
+  state = { rendero: false, rendern: false };
 
   componentDidMount() {
     /* fetch('https://api.github.com/users/nodeicode/repos',{
@@ -21,17 +28,22 @@ export default class HomePage extends React.Component {
   }
 
   renderAbout = () => {
-    setTimeout(() => {
-      this.setState({ render: true, class: "dis" });
-    }, 300);
+    this.setState({ rendero: true, rendern: true });
   };
 
   render() {
-    const dis = { display: "none" };
-    //return(<About/>)
     return (
       <div className="root">
-        <Typist
+        {this.state.rendern ? (
+          <div>
+            <About />
+            <style jsx global>{`
+              .T1 {
+                display:none; 
+              }
+            `}</style>
+          </div>
+        ) : (<Typist
           avgTypingDelay={100}
           startDelay={500}
           className="T1"
@@ -41,17 +53,7 @@ export default class HomePage extends React.Component {
           <a className="a1">Hello!</a>
           <Typist.Delay ms={500} />
           <Typist.Backspace count={6} delay={50} />
-        </Typist>
-        {this.state.render ? (
-          <div>
-            <About />
-            <style jsx global>{`
-              .T1 {
-                display: none;
-              }
-            `}</style>
-          </div>
-        ) : null}
+          </Typist>)}
         <a className="cpyright">Copyright © Lohit Aryan Gopikonda</a>
       </div>
     );

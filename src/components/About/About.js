@@ -1,18 +1,18 @@
 import React from 'react'
 import './About.module.css'
-import styled,{keyframes} from 'styled-components'
-import {fadeIn,fadeInRight,fadeOut} from 'react-animations'
 import '@fortawesome/fontawesome-free/js/all'
+import styled, { keyframes } from 'styled-components'
+import { fadeIn, fadeInRight, fadeOut } from 'react-animations'
 
-const fadein  = keyframes`${fadeIn}`;
+
+const fadein = keyframes`${fadeIn}`;
 const fadeinr = keyframes`${fadeInRight}`;
 const fadeo = keyframes`${fadeOut}`;
-
 
 const Card = styled.div`
 background-color:white;
 border-radius:25px;
-animation: 1.5s ${fadein};
+animation: 2s ${fadein};
 `;
 const Icon = styled.span`
 font-size:8vmin;
@@ -22,7 +22,7 @@ animation: 2s ${fadeinr};
 const Linkw = styled.a`
 text-decoration:none;
 color:inherit;
-`; 
+`;
 const Naaclick = styled.button`
 &&{
 border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
@@ -31,26 +31,26 @@ border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
 const Npclick = styled.button`
 &&{
 border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
-border-left-color: ${props => props.clica||props.clic ? "#f08d07" : "#e8e8e8"};
+border-left-color: ${props => props.clica || props.clic ? "#f08d07" : "#e8e8e8"};
 }
 `;
 const Neclick = styled.button`
 &&{
 border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
-border-left-color: ${props => props.clicp||props.clic ? "#f08d07" : "#e8e8e8"};
+border-left-color: ${props => props.clicp || props.clic ? "#f08d07" : "#e8e8e8"};
 }
 `;
 const Aabout = styled.div`
-animation: 1s ${props=> props.clic ? fadein : fadeo} forwards;
+animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
 `;
 
 const Projects = styled.div`
-animation: 1s ${props=> props.clic ? fadein : fadeo} forwards;
+animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
 
 `;
 
 const Exp = styled.div`
-animation: 1s ${props=>props.clic ? fadein : fadeo} forwards;
+animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
 
 `;
 
@@ -60,6 +60,14 @@ border:solid;
 border-color: #e8e8e8;
 border-radius:10px;
 `;
+
+const Expo = styled.div`
+animation: 1s fadein forwards;
+border:solid;
+border-color: #e8e8e8;
+border-radius:10px;
+`
+
 
 export default class About extends React.Component{
 
@@ -84,7 +92,7 @@ export default class About extends React.Component{
         return(
             <div className="r">
             <Card className="a">
-            <img src="../static/profilec.jpeg" alt="Profle Pic"/>
+            <img className="profileimg" src="../static/profilec.jpeg" alt="Profle Pic"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
 
@@ -154,6 +162,26 @@ export default class About extends React.Component{
                   className="T2">
                 </Typist>*/}
                 <a className="T2">My Experience 💼</a>
+                <Expo className="expo1">
+                  <img src="../static/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
+                  <a className="list">Computer Operations Aide</a>
+                  {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
+                <ul class="l1">  
+                  <li className="item">Debugging enterprise Server connection or integration issues of faculty devices</li>
+                  <li className="item">Implementing Web Designs and Maintaining University Websites</li>
+                  <li className="item">Managing University Data services like cloud storage, digital collaborative work-spaces,
+backups and recovery</li>
+                </ul>
+                  </Expo>
+                <Expo className="expo2">
+                  <img src="../static/mslc.png" href="https://mslc.uic.edu/" className="logo2" />
+                  <a className="list1">Math Teaching Assistant</a>
+                  {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
+                  <ul className="l2">  
+                    <li className="item">Clearing any doubts that students have concerning the subject or grading</li>
+                    <li className="item"> Grading Weekly Assignments and Homework.</li>
+                </ul>
+                </Expo>
             </Exp>):null}
 
             <div className="ports">
