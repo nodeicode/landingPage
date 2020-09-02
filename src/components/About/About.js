@@ -162,6 +162,16 @@ export default class About extends React.Component{
                   className="T2">
                 </Typist>*/}
                 <a className="T2">My Experience 💼</a>
+                <Expo className="expo2">
+                  <img src="../static/trec.png" className="logo2" />
+                  <a className="list1">Web Development Intern</a>
+                  {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
+                  <ul className="l2">
+                    <li className="item">Designed a Web-based real estate transaction management system in ReactJS </li>
+                    <li className="item"> Integrate and collect data from public record APIs and databases using Django and SQL</li>
+                    <li className="item">Worked on the web accessibility feature to make our site easy to use for disabled users</li>
+                  </ul>
+                </Expo>
                 <Expo className="expo1">
                   <img src="../static/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
                   <a className="list">Computer Operations Aide</a>
@@ -173,15 +183,6 @@ export default class About extends React.Component{
 backups and recovery</li>
                 </ul>
                   </Expo>
-                <Expo className="expo2">
-                  <img src="../static/mslc.png" href="https://mslc.uic.edu/" className="logo2" />
-                  <a className="list1">Math Teaching Assistant</a>
-                  {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
-                  <ul className="l2">  
-                    <li className="item">Clearing any doubts that students have concerning the subject or grading</li>
-                    <li className="item"> Grading Weekly Assignments and Homework.</li>
-                </ul>
-                </Expo>
             </Exp>):null}
 
             <div className="ports">
