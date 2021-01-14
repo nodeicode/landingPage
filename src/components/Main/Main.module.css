@@ -19,6 +19,55 @@ a{
   display: inline-grid;
   grid-auto-rows: 1vmax 12vmax 14vmax; 
 }
+.T2{
+  color: #f08d07;
+  font-size:2vmax;
+  align-self: center;
+  justify-self: start; 
+}
+
+/*Ports**/
+.ports{
+  grid-column: 5;
+  grid-row:2;
+  display: inline-grid;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;}
+
+.I{display: none;}
+
+.L{ 
+  grid-row:1;
+  transition: color 0.5s ease;
+  color: inherit;
+  align-self: center;}
+
+.L:hover{color: #4875B4;}
+
+.T{ 
+  grid-row:2;
+  align-self: center;
+  transition: color 0.5s ease;
+  color: inherit;}
+
+.T:hover{color:#33CCFF;}
+
+.D{
+  align-self: center;
+  grid-row:3;
+  transition: color 0.5s ;
+  color: inherit; 
+  }
+
+.D:hover{color:black}
+
+.G{
+  align-self: center;
+  grid-row:4;
+  transition: color 0.5s ;
+  color: inherit; 
+  }
+
+.G:hover{color:black}
 
 /****About****/
 .about{
@@ -226,108 +275,46 @@ h2{
   width:15vw;
   justify-self: center;
   right:1vw;
+  grid-gap:1vmin;
   grid-auto-columns: 1fr 1fr 1fr;
 
+
 }
+
+.two:hover ~ hr {
+  margin-left:130%;
+}
+
+.three:hover ~ hr {
+  margin-left: 250%;
+}
+
 .aa{
   grid-column:1;
   font-size:2.2vmin;
-  justify-self:right;
+  justify-self:center;
   outline:none;
   border:none;
   background:none;
-
-  padding-right:5px;
-  border-bottom: solid;
-  border-bottom-color: #e8e8e8;
-  padding-right: 5px;
 }
-.aa:hover{
-  animation: color-me 1s forwards;
-/* border-color: #f08d07; */
-}
-.aa:hover ~ .p{
-  animation: color-me-l 1s forwards;
-/* border-left-color: #f08d07; */
-}
-
 
 .p{
   grid-column:2;
+
   font-size:2.1vmin;
   padding-left: 5px;
   padding-right:5px;
   outline:none;
   border:none;
   background:none;
-
-  border-bottom: solid;
-  border-left:solid;
-  border-color: #e8e8e8;
 }
-/* .p:hover{
-  animation: color-me 1s forwards;
-
-}
-.p:hover ~ .e{
-  animation: color-me-l 1s forwards;
-  
-} */
-
 .e{
   padding-left:5px;
   font-size:2.1vmin;
   grid-column:3;
-  justify-self: left;
+  
+  justify-self: center;
   outline:none;
   border:none;
   background:none;
-
-  border-bottom: solid;
-  border-left:solid;
-  border-color: #e8e8e8;  
-}
-.e:hover{
-  animation: color-me 1s ;
-  /* border-color: #f08d07; */
-  /*border-color:#e8e8e8;*/
-}
-.e:hover + .p{
-  animation: color-me-l 1s ;
-/* border-right-color:#f08d07; */
-}
-
-
-@keyframes color-me {
-  /* You could think of as "step 1" */
-  0% {
-    border-color: #e8e8e8;
-  }
-  /* You could think of as "step 2" */
-  100% {
-    border-color: #f08d07;
-    
-  }
-}
-@keyframes color-me-l {
-  /* You could think of as "step 1" */
-  0% {
-    border-color: #e8e8e8;
-  }
-  /* You could think of as "step 2" */
-  100% {
-    border-left-color: #f08d07;
-    
-  }
-}
-.n{
-  cursor: pointer;
-}
-
-.cpyright{
-  bottom:2vmin;
-  position: absolute;
-  left:43%;
-  font-size: 1.8vmin;
-  color:gray;
 }

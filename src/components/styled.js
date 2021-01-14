@@ -19,31 +19,18 @@ export const Linkw = styled.a`
 text-decoration:none;
 color:inherit;
 `;
-export  const Naaclick = styled.button`
-&&{
-border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
-}
-`;
-export  const Npclick = styled.button`
-&&{
-border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
-border-left-color: ${props => props.clica || props.clic ? "#f08d07" : "#e8e8e8"};
-}
-`;
-export  const Neclick = styled.button`
-&&{
-border-color: ${props => props.clic ? "#f08d07" : "#e8e8e8"};
-border-left-color: ${props => props.clicp || props.clic ? "#f08d07" : "#e8e8e8"};
-}
+
+export const Aabout = styled.div`
+animation: 1s ${props => props.clic=='a' ? fadein : fadeo} forwards;
 `;
 
 export  const Projects = styled.div`
-animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
+animation: 1s ${props => props.clic=='p' ? fadein : fadeo} forwards;
 
 `;
 
 export  const Exp = styled.div`
-animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
+animation: 1s ${props => props.clic=='e' ? fadein : fadeo} forwards;
 
 `;
 
@@ -60,6 +47,19 @@ border:solid;
 border-color: #e8e8e8;
 border-radius:10px;
 `
+export const Nav = styled.hr`
+height: .25rem;
+width: 70%;
+margin-left:${props=>{
+    if(props.active=='a')return '10%'
+    if(props.active=='p')return '130%'
+    if(props.active=='e')return '250%'
+}};
+background: #f08d07;
+border: none;
+transition: .3s ease-in-out;
+align-self: top;
+`;
 
 
 // export {Icon,Linkw,Card,Expo,Git,Exp,Projects,Neclick}

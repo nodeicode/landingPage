@@ -2,11 +2,11 @@ import React from 'react'
 import './Main.module.css'
 import Ports from '../Ports'
 import About from '../About'
-import {Card,Expo,Naaclick,Neclick,Npclick,Projects,Git,Linkw,Exp} from '../styled.js'
+import {Card,Expo,Projects,Git,Linkw,Exp,Nav} from '../styled.js'
 
 export default class Main extends React.Component{
 
-  state={aa:true,p:false,e:false};
+  state={nav:'a'};
 
   componentDidMount(){
     setTimeout(()=>{
@@ -15,16 +15,6 @@ export default class Main extends React.Component{
   }
 
   render(){
-    // Scrap this navigation get a simpler nav
-    // var aa = () => {
-    //   this.setState({aa:true,p:false,e:false});
-    // };
-    // var p = () => {
-    //   this.setState({ aa: false, p: true, e: false });
-    // };
-    // var e = () => {
-    //   this.setState({ aa: false, p: false, e: true });
-    // };
         return(
             <div className="r">
             <Card className="a">
@@ -33,15 +23,16 @@ export default class Main extends React.Component{
             </Card>
 
             <div className="nav">
-              <Naaclick /*onMouseEnter={aa}*/ clic={this.state.aa} className="n aa" /*onClick={aa}*/>About</Naaclick>
-              <Npclick  clic={this.state.p} clica={this.state.aa} className="n p" >Projects</Npclick>
-              <Neclick clic={this.state.e}  clicp={this.state.p} className="n e" >Experience</Neclick>
+              <button className="aa one"  onMouseEnter={()=>this.setState({nav:'a'})}>About</button>
+              <button className="p two"  onMouseEnter={()=>this.setState({nav:'p'})}>Projects</button>
+              <button className="e three"  onMouseEnter={()=>this.setState({nav:'e'})}>Experience</button>
+              <Nav active={this.state.nav}/>
             </div>
 
-            {this.state.aa ? (<About clic={this.state.aa}/>) : null}
+            {this.state.nav=='a'?(About(this.state.nav)):null}
 
-            {this.state.p ? (
-            <Projects className="projects" clic={this.state.p}>
+            {this.state.nav=='p' ? (
+            <Projects className="projects" clic={this.state.nav}>
                {/* <Typist
                   avgTypingDelay={100}
                   startDelay={500}
@@ -72,8 +63,8 @@ export default class Main extends React.Component{
                 </Git>
               </Projects>): null}
             
-            {this.state.e ? (
-            <Exp className="exp" clic={this.state.e}>
+            {this.state.nav=='e' ? (
+            <Exp className="exp" clic={this.state.nav}>
                 {/*<Typist
                   avgTypingDelay={100}
                   startDelay={500}
@@ -95,7 +86,7 @@ export default class Main extends React.Component{
                   <img src="../static/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
                   <a className="list">Computer Operations Aide</a>
                   {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
-                <ul class="l1">  
+                <ul className="l1">  
                   <li className="item">Debugging enterprise Server connection or integration issues of faculty devices</li>
                   <li className="item">Implementing Web Designs and Maintaining University Websites</li>
                   <li className="item">Managing University Data services like cloud storage, digital collaborative work-spaces,

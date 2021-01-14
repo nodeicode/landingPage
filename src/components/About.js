@@ -1,24 +1,10 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
-import { fadeIn, fadeOut } from 'react-animations'
+import {Aabout} from './styled'
 
-export const fadein = keyframes`${fadeIn}`;
-export const fadeo = keyframes`${fadeOut}`;
-
-export const Aabout = styled.div`
-animation: 1s ${props => props.clic ? fadein : fadeo} forwards;
-`;
-
-export default class Ports extends React.Component{
-    render(){
+export default function About(props){
+    //render(){
     return(
-        <Aabout clic={this.props.clic} className="about">
-        {/*<Typist
-            avgTypingDelay={100}
-            startDelay={500}
-            cursor={{hideWhenDone: true}}
-            className="T2">
-        </Typist>*/}
+        <Aabout clic={props} className="about" >
             <a className="T2">About Me 👨‍💻</a> <br/>
         
           <a className="b">
@@ -29,17 +15,21 @@ export default class Ports extends React.Component{
               Actively Looking for Fall 2020 Internships and Full time Job Oppourtunities
               </a>
         <style jsx>{`
+            .about{
+              grid-row:2;
+              grid-column:3/5;
+              /* border:solid;
+              border-color: black; */
+              justify-items:center ;
+              text-align: left;
+              top:2vh;
+              /* display: none; */
+            }
             .logo{
               top:1vmin;
               position: relative;
               width:2vw;
               height:2vw;
-            }
-            .T2{
-              color: #f08d07;
-              font-size:2vmax;
-              align-self: center;
-              justify-self: start; 
             }
             .b{
               color:#020024;  
@@ -51,4 +41,5 @@ export default class Ports extends React.Component{
         `}</style>
           </Aabout>
     )
-}}
+//}
+}

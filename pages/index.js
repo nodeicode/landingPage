@@ -30,6 +30,15 @@ function HomePage({state}){
             <Main />
           {/* <a className="a1">Hello!</a> */}
         <a className="cpyright">Copyright © Lohit Aryan Gopikonda</a>
+        <style jsx>{`
+        .cpyright{
+          bottom:2vmin;
+          position: absolute;
+          left:43%;
+          font-size: 1.8vmin;
+          color:gray;
+        }
+        `}</style>
       </div>
     );
   }
