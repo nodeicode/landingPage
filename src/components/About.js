@@ -4,7 +4,7 @@ import {Aabout} from './styled'
 export default function About(props){
     //render(){
     return(
-        <Aabout clic={props} className="about" >
+        <Aabout clic={props.clic} className="about" >
             <a className="T2">About Me 👨‍💻</a> <br/>
         
           <a className="b">
