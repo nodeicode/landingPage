@@ -13,7 +13,7 @@ animation: 2s ${fadein};
 export const Icon = styled.span`
 font-size:8vmin;
 color:#f08d07;
-animation: 2s ${fadeinr};
+animation: 2s ${fadein};
 `;
 export const Linkw = styled.a`
 text-decoration:none;
@@ -49,11 +49,15 @@ border-radius:10px;
 `
 export const Nav = styled.hr`
 height: .25rem;
-width: 70%;
+width: ${props=>{
+    if(props.active=='a')return '69%'
+    if(props.active=='p')return '89%'
+    if(props.active=='e')return '121%'
+}};
 margin-left:${props=>{
-    if(props.active=='a')return '10%'
-    if(props.active=='p')return '130%'
-    if(props.active=='e')return '250%'
+    if(props.active=='a')return '8.1%'
+    if(props.active=='p')return '110%'
+    if(props.active=='e')return '233%'
 }};
 background: #f08d07;
 border: none;
