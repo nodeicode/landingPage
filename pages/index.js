@@ -1,20 +1,17 @@
 import './index.css'
 import React from "react";
-import About from "../src/components/About/About.js";
+import Main from "../src/components/Main/Main.js";
 import Typist from "react-typist";
 import styled, { keyframes } from 'styled-components'
 import {fadeIn,fadeOut} from 'react-animations/lib/fade-in';
 
-const fadeou = keyframes`${fadeOut}`;
-const fadei = keyframes`${fadeIn}`;
+// const fadeou = keyframes`${fadeOut}`;
+// const fadei = keyframes`${fadeIn}`;
 
+function HomePage({state}){
 
-
-export default class HomePage extends React.Component {
-  state = { rendero: false, rendern: false };
-
-  componentDidMount() {
-    /* fetch('https://api.github.com/users/nodeicode/repos',{
+  /*ComponentDidMount() {
+     fetch('https://api.github.com/users/nodeicode/repos',{
       method:'GET',
       headers:{
       'Authorization':'token fbdd3205a5fa28578d120f3ee578a7ac2d6df4d2'}
@@ -24,38 +21,27 @@ export default class HomePage extends React.Component {
           console.log(JSON.stringify(element["name"]));
         });
       })
-      .catch(err=>console.log(err));*/
-  }
+      .catch(err=>console.log(err));
+  }*/
 
-  renderAbout = () => {
-    this.setState({ rendero: true, rendern: true });
-  };
-
-  render() {
+  //render() {
     return (
       <div className="root">
-        {this.state.rendern ? (
-          <div>
-            <About />
-            <style jsx global>{`
-              .T1 {
-                display:none; 
-              }
-            `}</style>
-          </div>
-        ) : (<Typist
-          avgTypingDelay={100}
-          startDelay={500}
-          className="T1"
-          cursor={{ blink: true }}
-          onTypingDone={this.renderAbout}
-        >
-          <a className="a1">Hello!</a>
-          <Typist.Delay ms={500} />
-          <Typist.Backspace count={6} delay={50} />
-          </Typist>)}
+            <Main />
+          {/* <a className="a1">Hello!</a> */}
         <a className="cpyright">Copyright © Lohit Aryan Gopikonda</a>
+        <style jsx>{`
+        .cpyright{
+          bottom:2vmin;
+          position: absolute;
+          left:43%;
+          font-size: 1.8vmin;
+          color:gray;
+        }
+        `}</style>
       </div>
     );
   }
-}
+//}
+
+export default HomePage
