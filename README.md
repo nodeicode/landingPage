@@ -7,9 +7,9 @@
   </a>
 </p>
 
-> Profile Page with all my skills, projects and more Information!
+> Profile Page with all my skills, projects and more Information! Made fully using react!
 
-### 🏠 [Homepage](lohitaryan.now.sh)
+### 🏠 Homepage (https://lohitaryan.now.sh)
 
 ## Prerequisites
 
