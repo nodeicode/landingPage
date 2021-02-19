@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.png" />
+          <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
           <link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" as="style" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" type="text/css" />
           <meta charSet="utf-8" />

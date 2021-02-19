@@ -10,7 +10,7 @@ export default function About(props){
           <a className="b">
               I ❤️ Javascript, heavily focused on React, Node and Next. <br/>
               Currently an Undergrad majoring in Computer Science <br /> 
-              at The University of Illinois at Chicago <img className="logo" href="https://www.uic.edu/" src="../static/uic_logo.jpg"/>
+              at The University of Illinois at Chicago <img className="logo" href="https://www.uic.edu/" src="/uic_logo.jpg"/>
               <br/> Graduating December 2020
               Actively Looking for Fall 2020 Internships and Full time Job Oppourtunities
               </a>

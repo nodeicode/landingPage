@@ -7,7 +7,7 @@ export default function Experience(props){
         <Exp className="exp" clic={props.clic}>
                 <a className="T2">My Experience 💼</a>
                 <Expo className="expo2">
-                  <img src="../static/trec.png" className="logo2" />
+                  <img src="/trec.png" className="logo2" />
                   <a className="list1">Web Development Intern</a>
                   {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
                   <ul className="l2">
@@ -17,7 +17,7 @@ export default function Experience(props){
                   </ul>
                 </Expo>
                 <Expo className="expo1">
-                  <img src="../static/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
+                  <img src="/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
                   <a className="list">Computer Operations Aide</a>
                   {/*<i className="fa fa-arrow-circle-down extend fa-lg" aria-hidden="true"></i>*/}
                 <ul className="l1">  

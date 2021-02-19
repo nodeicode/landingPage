@@ -3,7 +3,7 @@ import './Main.module.css'
 import Ports from '../Ports'
 import About from '../About'
 import Project from '../Projects'
-import {Card,Expo,Projects,Git,Linkw,Exp,Nav} from '../styled.js'
+import {Card,Nav} from '../styled.js'
 import Experience from '../Experience'
 
 export default class Main extends React.Component{
@@ -13,8 +13,9 @@ export default class Main extends React.Component{
   render(){
         return(
             <div className="r">
+
             <Card className="a">
-            <img className="profileimg" src="../static/profilec.jpeg" alt="Profle Pic"/>
+            <img className="profileimg" src="/profilec.jpeg" alt="Profle Pic"/>
             <h1 className="hi">Lohit Aryan</h1>
             </Card>
 

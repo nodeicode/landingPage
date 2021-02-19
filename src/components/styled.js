@@ -8,12 +8,12 @@ export const fadeo = keyframes`${fadeOut}`;
 export const Card = styled.div`
 background-color:white;
 border-radius:25px;
-animation: 2s ${fadein};
+animation: 4s ${fadein};
 `;
 export const Icon = styled.span`
 font-size:8vmin;
 color:#f08d07;
-animation: 2s ${fadein};
+animation: 4s ${fadein};
 `;
 export const Linkw = styled.a`
 text-decoration:none;
@@ -21,16 +21,16 @@ color:inherit;
 `;
 
 export const Aabout = styled.div`
-animation: 1s ${props => props.clic=='a' ? fadein : fadeo} forwards;
+animation: 2s ${props => props.clic=='a' ? fadein : fadeo} forwards;
 `;
 
 export  const Projects = styled.div`
-animation: 1s ${props => props.clic=='p' ? fadein : fadeo} forwards;
+animation: 2s ${props => props.clic=='p' ? fadein : fadeo} forwards;
 
 `;
 
 export  const Exp = styled.div`
-animation: 1s ${props => props.clic=='e' ? fadein : fadeo} forwards;
+animation: 2s ${props => props.clic=='e' ? fadein : fadeo} forwards;
 
 `;
 
