@@ -23,8 +23,7 @@ export default function Experience(props){
                 <ul className="l1">  
                   <li className="item">Debugging enterprise Server connection or integration issues of faculty devices</li>
                   <li className="item">Implementing Web Designs and Maintaining University Websites</li>
-                  <li className="item">Managing University Data services like cloud storage, digital collaborative work-spaces,
-backups and recovery</li>
+                  <li className="item">Managing University Data services like cloud storage, digital collaborative work-spaces,backups and recovery</li>
                 </ul>
                   </Expo>
             </Exp>

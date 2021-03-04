@@ -1,12 +1,7 @@
-import './index.css'
+
 import React from "react";
 import Main from "../src/components/Main/Main.js";
-import Typist from "react-typist";
-import styled, { keyframes } from 'styled-components'
-import {fadeIn,fadeOut} from 'react-animations/lib/fade-in';
 
-// const fadeou = keyframes`${fadeOut}`;
-// const fadei = keyframes`${fadeIn}`;
 
 function HomePage({state}){
 
@@ -28,17 +23,20 @@ function HomePage({state}){
     return (
       <div className="root">
             <Main />
-          {/* <a className="a1">Hello!</a> */}
-        <a className="cpyright">Copyright © Lohit Aryan Gopikonda</a>
+        <footer>
+        <a className="cpyright"> © Lohit Aryan Gopikonda</a>
         <style jsx>{`
         .cpyright{
           bottom:2vmin;
-          position: absolute;
-          left:43%;
+          text-align:center;
           font-size: 1.8vmin;
           color:gray;
+          position:absolute;
+          bottom:2vmin;
+          right:1%;
         }
         `}</style>
+        </footer>
       </div>
     );
   }

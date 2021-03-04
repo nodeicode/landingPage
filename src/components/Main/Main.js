@@ -1,38 +1,40 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './Main.module.css'
 import Ports from '../Ports'
 import About from '../About'
 import Project from '../Projects'
-import {Card,Expo,Projects,Git,Linkw,Exp,Nav} from '../styled.js'
+import {ProfileCard,Nav,NavElement,GradientBox} from '../styled.js'
 import Experience from '../Experience'
 
-export default class Main extends React.Component{
+export default function Main(){
 
-  state={nav:'a'};
+  const [nav,setnav] = useState('a');
+  const dynamo = (state)=>{
+    if(state=='a')return (<About clic={nav} />)
+    if(state=='p')return (<Project clic={nav}/>)
+    if(state=='e')return (<Experience clic={nav}/>)
+  }
 
-  render(){
+  // render(){
         return(
             <div className="r">
-            <Card className="a">
+            <ProfileCard >
             <img className="profileimg" src="../static/profilec.jpeg" alt="Profle Pic"/>
-            <h1 className="hi">Lohit Aryan</h1>
-            </Card>
+            <h1 className="hi">Hi There! 👋 <br/> I'm Lohit</h1>
+            </ProfileCard>
 
             <div className="nav">
-              <button className="aa one"  onMouseEnter={()=>this.setState({nav:'a'})}>About</button>
-              <button className="p two"  onMouseEnter={()=>this.setState({nav:'p'})}>Projects</button>
-              <button className="e three"  onMouseEnter={()=>this.setState({nav:'e'})}>Experience</button>
-              <Nav active={this.state.nav}/>
+              <NavElement column="1" elem='a' active = {nav} onClick={()=>setnav('a')}>About</NavElement>
+              <NavElement column="2" elem='p' active = {nav} onClick={()=>setnav('p')}>Projects</NavElement>
+              <NavElement column="4" elem='e' active = {nav} onClick={()=>setnav('e')}>Experience</NavElement>
+              <Nav active={nav}/>
             </div>
 
-            {this.state.nav=='a'?(<About clic={this.state.nav} />):null}
-
-            {this.state.nav=='p' ? (<Project clic={this.state.nav}/>): null}
-            
-            {this.state.nav=='e' ? (<Experience clic={this.state.nav}/>):null}
+            <GradientBox className="grad">{dynamo(nav)}</GradientBox>
 
             <Ports/>
             
           </div>
         );
-    }}
+    }
+  //}
