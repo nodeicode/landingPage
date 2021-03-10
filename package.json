@@ -29,7 +29,8 @@
   "scripts": {
     "build": "next build",
     "start": "next start",
-    "dev": "next"
+    "dev": "next",
+    "now-build": "next build"
   },
   "engines": {
     "npm": ">=6.0.0",
