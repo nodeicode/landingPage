@@ -1,12 +1,15 @@
 import React ,{useState} from 'react'
 import './Main.module.css'
-import loadable from '@loadable/component'
+//import loadable from '@loadable/component'
 import {ProfileCard,Nav,NavElement,GradientBox} from '../styled.js'
-const Ports = loadable(()=>import ('../Ports')); 
-const About = loadable(()=>import ('../About')); 
-const Project = loadable(()=>import( '../Projects')); 
-const Experience = loadable(()=>import('../Experience'));
-
+// const Ports = loadable(()=>import ('../Ports')); 
+// const About = loadable(()=>import ('../About')); 
+// const Project = loadable(()=>import( '../Projects')); 
+// const Experience = loadable(()=>import('../Experience'));
+import Ports from '../Ports'
+import About from '../About'
+import Project from '../Projects'
+import Experience from '../Experience'
 export default function Main(){
 
   const [nav,setnav] = useState('a');

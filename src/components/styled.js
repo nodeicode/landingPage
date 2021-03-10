@@ -35,7 +35,7 @@ grid-auto-column: 12vmax 14vmax;
 export const Icon = styled.span`
 font-size:8vmin;
 color:#f08d07;
-animation: 2s ${fadein};
+animation: 2s ${fadein} forwards;
 align-self: center;
 grid-row:${props=>props.pos};
 transition: color 0.5s ;
@@ -77,9 +77,8 @@ background-clip: padding-box;
 border: solid 0.3em transparent;
 border-radius: 1em;
 
-height:70vh;
+height:68vh;
 width:66vw;
-
     
 `;
 
@@ -87,6 +86,10 @@ export const Aabout = styled.div`
 animation: 1s ${props => props.clic=='a' ? fadein : fadeo} forwards;
 display:inline-grid;
 grid-auto-rows:min-content;
+border:solid;
+border-color: #e8e8e8;
+border-radius:10px;
+padding:1%;
 `;
 
 export  const Projects = styled.div`
