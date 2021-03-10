@@ -18,11 +18,11 @@ display: block;
 align-self: center;
 justify-self: center;
 
-grid-column: 2/3;
+grid-column: 1;
 grid-row: 2;
 
 display: inline-grid;
-grid-auto-rows: 1vmax 12vmax 14vmax; 
+grid-auto-column: 12vmax 14vmax; 
 
 @media ${device.mobileS}{
     grid-row:1;
@@ -36,6 +36,17 @@ export const Icon = styled.span`
 font-size:8vmin;
 color:#f08d07;
 animation: 2s ${fadein};
+align-self: center;
+grid-row:${props=>props.pos};
+transition: color 0.5s ;
+display:block;
+&:hover{
+    color:${props=>props.hov}
+}
+@media ${device.mobileS}{
+    grid-row:auto;
+    grid-column:${props=>props.pos};
+}
 `;
 export const Linkw = styled.a`
 text-decoration:none;
@@ -45,41 +56,47 @@ color:inherit;
 export const GradientBox = styled.div`
 align-items: center;
 position: relative;
-padding: 10% 2em;
+padding: 1% 2em;
 box-sizing: border-box;
 
 
 grid-row:2;
-grid-column:3/5;
+grid-column:2/6;
 @media ${device.mobileS}{
     grid-row:3;
     grid-column:1/-1;
+    padding: 2% 2%;
 }
+
 justify-items:center ;
+justify-self:center;
 text-align: left;
+
 background:white;
 background-clip: padding-box;
 border: solid 0.3em transparent;
 border-radius: 1em;
-&:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -5px;
-    border-radius: inherit;
-    background: linear-gradient(45deg, #f08d07 0%, #ffa1fe 100%);
+
+height:70vh;
+width:66vw;
+
+    
 `;
 
 export const Aabout = styled.div`
 animation: 1s ${props => props.clic=='a' ? fadein : fadeo} forwards;
+display:inline-grid;
+grid-auto-rows:min-content;
 `;
 
 export  const Projects = styled.div`
 animation: 1s ${props => props.clic=='p' ? fadein : fadeo} forwards;
+justify-items:center ;
+text-align: left;
+display: inline-grid;
+top:2vh;
+grid-template-rows: 3vmax 1fr ;
+height:100%;
 `;
 
 export  const Exp = styled.div`
@@ -92,6 +109,13 @@ animation: 1s fadein forwards;
 border:solid;
 border-color: #e8e8e8;
 border-radius:10px;
+font-weight: 500;
+padding:1% 1em;
+display:inline-grid;
+grid-template-rows: 4vh 2fr 3fr;
+grid-template-columns: 4vh 2fr 3fr;
+grid-gap:1%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 export  const Expo = styled.div`
@@ -146,6 +170,11 @@ transition: color 0.5s ease;
     font-size:3vmin;
 }
 `;
+
+export const DotNav = styled.ul`
+`;
+
+export const DotNavElement = styled.div11
 
 
 // export {Icon,Linkw,Card,Expo,Git,Exp,Projects,Neclick}

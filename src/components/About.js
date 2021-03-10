@@ -6,15 +6,17 @@ export default function About({clic}){
     return(
         <Aabout clic={clic}>
           
-          <a className="T2">About Me 👨‍💻</a> <br/>
-          <a className="b">
-              I ❤️ Javascript, heavily focused on React, Node and Next. 
-              Currently an Undergrad majoring in Computer Science 
-              {/* at The University of Illinois at Chicago <img className="logo" href="https://www.uic.edu/" src="../static/uic_logo.jpg"/> */}
-              <br/> Graduating December 2020
-              Actively Looking for Fall 2020 Internships and Full time Job Oppourtunities
-              </a>
+          <a className="T2">About Me 👨‍💻</a>
+          <p className="b">❤️ Javascript and Python, currently focused on React, Node and Next.</p> 
+          <p className="b s">Graduated December 2020 from the University Of Illinois at Chicago
+          <img className="logo" href="https://www.uic.edu/" src="/uic_logo.jpg"/> majoring in Computer Science </p>
+          {/* <p className="b">Working on multiple startups and taking on challenges to reach my goal of learning something new and coding
+          something out everyday</p> */}
+          <p className="b">Actively Looking for full time Oppourtunities that give me a chance to learn more and be a part of a fast
+          paced and growing company with a collaborative and transparent culture that is looking to make a difference!</p>
+          <p className="b">Wanna get in touch? Check out my socials or Shoot me an email at <a href="mailto:lohitaryan20@gmail.com">lohitaryan20@gmail.com</a> </p>
         <style jsx>{`
+            .s{margin:0;}
             .about{
               grid-row:2;
               grid-column:3/5;
@@ -26,10 +28,17 @@ export default function About({clic}){
               /* display: none; */
             }
             .logo{
-              top:1vmin;
+              top:2vh;
+              left:0.2vw;
               position: relative;
-              width:2vw;
-              height:2vw;
+              width:3vw;
+              height:3vw;
+              border-radius:50%;
+            }
+            @media screen and (max-width: 900px) {
+              .logo{
+                top:0.5vh;
+              }
             }
         `}</style>
           </Aabout>

@@ -1,10 +1,11 @@
 import React ,{useState} from 'react'
 import './Main.module.css'
-import Ports from '../Ports'
-import About from '../About'
-import Project from '../Projects'
+import loadable from '@loadable/component'
 import {ProfileCard,Nav,NavElement,GradientBox} from '../styled.js'
-import Experience from '../Experience'
+const Ports = loadable(()=>import ('../Ports')); 
+const About = loadable(()=>import ('../About')); 
+const Project = loadable(()=>import( '../Projects')); 
+const Experience = loadable(()=>import('../Experience'));
 
 export default function Main(){
 
@@ -19,7 +20,8 @@ export default function Main(){
         return(
             <div className="r">
             <ProfileCard >
-            <img className="profileimg" src="../static/profilec.jpeg" alt="Profle Pic"/>
+            {/* <Image src="/profilec.jpeg" alt="That's Me!" layout='responsive' height={750} width={750} className="profileimg"/> */}
+            <img className="profileimg" src="/profilecd.jpeg" alt="Profle Pic"/>
             <h1 className="hi">Hi There! 👋 <br/> I'm Lohit</h1>
             </ProfileCard>
 
