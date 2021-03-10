@@ -127,7 +127,8 @@ ul{
     grid-column: 2/-2 !important;
   }
   .ports{
-    grid-row:4;
+    grid-row:3;
+    align-self: end;
     grid-column: 2/-2;
     grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
