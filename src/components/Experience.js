@@ -1,30 +1,41 @@
-import {Exp,Expo} from './styled'
+import {Exp,Git} from './styled'
+import { Scrollbars } from 'react-custom-scrollbars';
 
 export default function Experience(props){
     //render(){
     return(
         <Exp className="exp" clic={props.clic}>
-                {/* <a className="T2">My Experience 💼</a>
-                <Expo className="expo2">
-                  <img src="/trec.png" className="logo2" />
-                  <a className="list1">Web Development Intern</a
-                  <ul className="l2">
-                    <li className="item">Designed a Web-based real estate transaction management system in ReactJS </li>
-                    <li className="item"> Integrate and collect data from public record APIs and databases using Django and SQL</li>
-                    <li className="item">Worked on the web accessibility feature to make our site easy to use for disabled users</li>
-                  </ul>
-                </Expo>
-                <Expo className="expo1">
-                  <img src="/cada.jpg" href="https://cada.uic.edu/" className="logo1" />
-                  <a className="list">Computer Operations Aide</a>
-                
-                <ul className="l1">  
-                  <li className="item">Debugging enterprise Server connection or integration issues of faculty devices</li>
-                  <li className="item">Implementing Web Designs and Maintaining University Websites</li>
-                  <li className="item">Managing University Data services like cloud storage, digital collaborative work-spaces,backups and recovery</li>
-                </ul>
-                  </Expo> */}
-            </Exp>
+          <a className="T2">My Experience 💼 (Under Contruction 🚧)</a>
+          <Scrollbars
+          autoHeight
+          autoHeightMin={350}
+          autoHeightMax={450}
+          >
+                <Git>
+                  <img className="gi" src="/git.png" aria-hidden="true"/>
+                  <a className="rep" href="https://github.com/nodeicode/Node-Mongoose-Do-it-App"> Lead Software Engineer Intern<br/></a> 
+                  <p className="desc">
+                    Worked on the Real estate Transaction management microservice <br/> 
+                    Primary stack used: 
+                    <img className= "badge" src="https://img.shields.io/badge/-Reactjs-black?style=for-the-badge&logo=react"/> 
+                    <img className= "badge" src="https://img.shields.io/badge/-Django-green?style=for-the-badge&logo=django"/>  
+                  </p>
+                  <img className="placeh"src="/trec1.png" aria-hidden="true"/>
+                </Git>
+                <Git>
+                    <img className="gi" src="/git.png" aria-hidden="true"/>
+                    <a className="rep" href="https://github.com/nodeicode/landingPage">Machine Learning Inten <br/></a>
+                    <p className="desc"> Developed a Chrome Plugin to serve the NLP model API for wide spread usage of the Neural Network Model</p>
+                    <img className="placeh"src="/dca.png" aria-hidden="true"/>
+                </Git>
+                <Git>
+                    <img className="gi" src="/git.png" aria-hidden="true"/>
+                    <a className="rep" href="https://github.com/nodeicode/Proxy-Script-bash">Computer Operations Aide<br/></a>
+                    <p className="desc"> Managed the College of Art, Archeteture and Desgin websites </p>
+                    <img className="placeh"src="/cada.jpg" aria-hidden="true"/>
+                </Git>
+          </Scrollbars>
+            </Exp> 
     )
-//}
 }
+

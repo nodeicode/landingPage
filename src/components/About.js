@@ -21,13 +21,6 @@ export default function About({clic}){
           paced and growing company with a collaborative and transparent culture that is looking to make a difference!</p>
           <p className="b">Wanna get in touch? Check out my socials or Shoot me an email at <a href="mailto:lohitaryan20@gmail.com">lohitaryan20@gmail.com</a> </p>
         <style jsx>{`
-            .badge{
-              padding: 0.5%;
-              top: 2vmin;
-              position: relative;
-              width: 13vmin;
-              height: 4vmin;
-            }
             .s{margin:0;}
             .about{
               grid-row:2;

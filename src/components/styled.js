@@ -35,6 +35,8 @@ grid-auto-column: 12vmax 14vmax;
 export const Icon = styled.span`
 font-size:8vmin;
 color:#f08d07;
+width:min-content;
+justify-self:center;
 animation: 2s ${fadein} forwards;
 align-self: center;
 grid-row:${props=>props.pos};
@@ -66,6 +68,7 @@ grid-column:2/6;
     grid-row:3;
     grid-column:1/-1;
     padding: 2% 2%;
+    height:60vh;
 }
 
 justify-items:center ;
@@ -104,20 +107,31 @@ height:100%;
 
 export  const Exp = styled.div`
 animation: 1s ${props => props.clic=='e' ? fadein : fadeo} forwards;
-
+justify-items:center ;
+text-align: left;
+display: inline-grid;
+top:2vh;
+grid-template-rows: 3vmax 1fr ;
+height:100%;
 `;
 
 export const Git = styled.div`
 animation: 1s fadein forwards;
+margin-bottom:5%;
+height:40vh;
 border:solid;
 border-color: #e8e8e8;
 border-radius:10px;
-font-weight: 500;
 padding:1% 1em;
 display:inline-grid;
-grid-template-rows: 4vh 2fr 3fr;
-grid-template-columns: 4vh 2fr 3fr;
+grid-template-rows: 4vh 1fr 3fr;
+grid-template-columns: 4vh 2fr 4fr;
 grid-gap:1%;
+@media ${device.mobileS}{
+    margin-bottom:45%;
+    width:56vw;
+    padding: 1% 1%;
+}
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 

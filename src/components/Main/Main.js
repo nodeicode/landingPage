@@ -31,7 +31,7 @@ export default function Main(){
             <div className="nav">
               <NavElement column="1" elem='a' active = {nav} onClick={()=>setnav('a')}>About</NavElement>
               <NavElement column="2" elem='p' active = {nav} onClick={()=>setnav('p')}>Projects</NavElement>
-              <NavElement column="4" elem='e' active = {nav} onClick={()=>setnav('e')}>Experience</NavElement>
+              <NavElement column="3" elem='e' active = {nav} onClick={()=>setnav('e')}>Experience</NavElement>
               <Nav active={nav}/>
             </div>
 
